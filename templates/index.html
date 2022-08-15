@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <!-- Colección Actual Section -->
+    <section class="section-content py-5" style="background-image: url(/static/fiesta.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+        <div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h4 style="color: white;">
+                Explora Nuestra Colección
+            </h4>
+            <h4 style="color: white;">
+                FIESTA PRIMAVERA
+            </h4>
+            <a href="/1colfiesta"><button class="btn btn-info" type="submit" style="position: absolute; left: 4rem;">Ir a la Colección</button></a>
+            <br><br><br>
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- Introduction Colección Section -->
+	<section class="section-content py-5" id="boxesborder">
+        <div class="row" id="centeredboxes">
+	        <div class="col-xs-6" id="links">
+		        <img src="/static/drawing.jpg" id="boxeslarge" alt="Drawing"/>
+	        </div>
+	        <div class="col-xs-6" id="boxeslarge">
+		        <br><br><br><br><br>
+		        <p class="textos">En el principio ya existía la Palabra; y aquel que es la Palabra estaba con Dios y era Dios.</p>
+		        <br>
+		        <p class="textos">En él estaba la vida, y la vida era la luz de la humanidad.</p>
+		        <h5 class="encabezadostextos" style="text-align: right;">Juan 1:1, 1:4</h5>
+	        </div>
+	        <div class="col-xs-6" id="links">
+		        <img src="/static/muestra.jpg" id="boxeslarge" alt="Pieza"/>
+		    </div>
+        </div>
+	</section>
+	<br><br><br>
+
+	<!-- Cathegories Section -->
+	<section class="section-content py-5" id="boxesborder">
+	    <div class="row" id="centeredboxes">
+		    <div class="col-xs-6 img-holder" id="links">
+		        <img src="/static/aretes.jpg" id="boxesmedium" alt="Aretes">
+		        <a class="link" href="/aretes" id="links" style="background: #CCA10F">Aretes</a>
+		    </div>
+		    <div class="col-xs-6 img-holder" id="links">
+		        <img src="/static/collares.jpg" id="boxesmedium" alt="Collares">
+		        <a class="link" href="/collares" id="links" style="background: #CCA10F">Collares</a>
+		    </div>
+		    <div class="col-xs-6 img-holder" id="links">
+		        <img src="/static/brazaletes.jpg" id="boxesmedium" alt="Brazaletes">
+		        <a class="link" href="/brazaletes" id="links" style="background: #CCA10F">Brazaletes</a>
+		    </div>
+		    <div class="col-xs-6 img-holder" id="links">
+		        <img src="/static/anillos.jpg" id="boxesmedium" alt="Anillos">
+		        <a class="link" href="/anillos" id="links" style="background: #CCA10F">Anillos</a>
+		    </div>
+	    </div>
+	</section>
+
+{% endblock %}

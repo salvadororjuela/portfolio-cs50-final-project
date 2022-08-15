@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contactenos
+{% endblock %}
+
+{% block main %}
+
+    <br><br><br>
+
+    <!--Division for emailing-->
+    <div id="email" class="container" style="background: #0795AA; max-width: 1080px; border-style: groove; margin: auto;">
+        <!--Use Getform to receive emails from users. https://app.getform.io -->
+        <form action="https://getform.io/f/c3b27407-35d4-42bd-ae82-6821932b99d4" method="POST" enctype="multipart/form-data">
+            <input name="name" type="text" id="fullname" maxlength="50" placeholder="Nombre Completo...">
+            <input name="email" type="text" maxlength="25" placeholder="E-mail...">
+            <br>
+            <br>
+            <textarea name="message" style="text-align: justify;" maxlength="2000" rows="10" cols="100" placeholder="Escribanos sus Preguntas (Máximo 2000 Caractéres)"></textarea>
+            <button type="submit" name="submit">
+                Enviar
+            </button>
+        </form>
+    </div>
+    <br>
+{% endblock %}
